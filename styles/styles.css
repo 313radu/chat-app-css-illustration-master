@@ -1,0 +1,390 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: hsl(270, 20%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 1440px;
+  min-width: 375px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+main section:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+main section:nth-child(1) .phone-body {
+  width: 350px;
+  height: 650px;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-screen {
+  width: 95%;
+  height: 98%;
+  border-radius: 3em;
+  overflow: hidden;
+  position: relative;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  align-items: center;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .exit-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 1em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .exit-btn i {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .avatar img {
+  width: 100%;
+  height: 100%;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .user {
+  margin-left: 0.5em;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .user p:nth-child(1) {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .user p:nth-child(2) {
+  color: hsl(270, 7%, 64%);
+  font-size: 0.7rem;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .option-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 1em;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 5em;
+}
+main section:nth-child(1) .phone-body .phone-screen .phone-header .option-btn i {
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-screen::before {
+  content: "";
+  width: 50%;
+  height: 3%;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  top: 0;
+  left: 25%;
+  border-bottom-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+}
+main section:nth-child(1) .phone-body .phone-main {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas: "box1 box1 .. .." "box2 box2 .. .." "empty box3 box4 box5" ".. box6 box6 box6" ".. .. box7 box7" "box8 box8 box8 box8" "box9 box9 box9 box9" "box10 box10 box10 box10";
+  background-color: hsl(270, 20%, 96%);
+  padding: 10px;
+}
+main section:nth-child(1) .phone-body .phone-main div {
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  word-break: break-all;
+  text-wrap: wrap;
+}
+main section:nth-child(1) .phone-body .phone-main .box1 {
+  grid-area: box1;
+  background-color: hsla(275, 71%, 89%, 0.479);
+  font-size: 0.62rem;
+  color: hsl(264, 100%, 61%);
+}
+main section:nth-child(1) .phone-body .phone-main .box2 {
+  grid-area: box2;
+  background-color: hsla(275, 71%, 89%, 0.479);
+  font-size: 0.62rem;
+  color: hsl(264, 100%, 61%);
+}
+main section:nth-child(1) .phone-body .phone-main .empty {
+  grid-area: empty;
+}
+main section:nth-child(1) .phone-body .phone-main .empty img {
+  width: 130px;
+  height: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+main section:nth-child(1) .phone-body .phone-main .box3 {
+  grid-area: box3;
+  overflow: hidden;
+}
+main section:nth-child(1) .phone-body .phone-main .box3 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scale: 2;
+}
+main section:nth-child(1) .phone-body .phone-main .box4 {
+  grid-area: box4;
+  overflow: hidden;
+}
+main section:nth-child(1) .phone-body .phone-main .box4 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scale: 2;
+}
+main section:nth-child(1) .phone-body .phone-main .box5 {
+  grid-area: box5;
+  overflow: hidden;
+}
+main section:nth-child(1) .phone-body .phone-main .box5 img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scale: 2;
+}
+main section:nth-child(1) .phone-body .phone-main .box6 {
+  grid-area: box6;
+  font-size: 0.62rem;
+  background-color: hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-main .box7 {
+  grid-area: box7;
+  font-size: 0.62rem;
+  background-color: hsl(0, 0%, 100%);
+}
+main section:nth-child(1) .phone-body .phone-main .box8 {
+  width: 60%;
+  grid-area: box8;
+  color: hsl(276, 55%, 52%);
+  font-size: 0.62rem;
+  background-color: hsla(275, 71%, 89%, 0.479);
+}
+main section:nth-child(1) .phone-body .phone-main .box9 {
+  width: 75%;
+  grid-area: box9;
+}
+main section:nth-child(1) .phone-body .phone-main .box9 .dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid hsl(270, 7%, 64%);
+  border-radius: 50%;
+  margin-right: 1em;
+}
+main section:nth-child(1) .phone-body .phone-main .box9 p:nth-child(2) {
+  margin-inline-end: 7em;
+}
+main section:nth-child(1) .phone-body .phone-main .box10 {
+  width: 75%;
+  grid-area: box10;
+}
+main section:nth-child(1) .phone-body .phone-main .box10 .dot {
+  width: 15px;
+  height: 15px;
+  border: 2px solid hsl(270, 7%, 64%);
+  border-radius: 50%;
+  margin-right: 1em;
+}
+main section:nth-child(1) .phone-body .phone-main .box10 p:nth-child(2) {
+  margin-inline-end: 9em;
+}
+main section:nth-child(1) .phone-body .phone-main .box9, main section:nth-child(1) .phone-body .phone-main .box10 {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.62rem;
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-left-radius: 0;
+}
+main section:nth-child(1) .phone-body .phone-main .box9 p:nth-child(3), main section:nth-child(1) .phone-body .phone-main .box10 p:nth-child(3) {
+  font-weight: 700;
+  font-size: 1rem;
+}
+main section:nth-child(1) .phone-body .phone-footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  background-color: hsl(270, 20%, 96%);
+}
+main section:nth-child(1) .phone-body .phone-footer input {
+  width: 95%;
+  height: 60%;
+  border-radius: 2em;
+  text-indent: 1em;
+  margin-left: 0.5em;
+  border: none;
+}
+main section:nth-child(1) .phone-body .phone-footer button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  background-color: hsl(271, 36%, 24%);
+}
+main section:nth-child(1) .phone-body .phone-footer button i {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+}
+main section:nth-child(1)::before {
+  content: "";
+  width: 60%;
+  height: 85%;
+  background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  position: absolute;
+  top: 0;
+  left: -10%;
+  border-bottom-left-radius: 15em;
+  border-bottom-right-radius: 15em;
+}
+main section:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+main section:nth-child(2) h1 {
+  width: 55%;
+  font-size: 2.5rem;
+  margin-block-end: 0.5em;
+  margin-inline-start: 1.5em;
+  font-size: 300;
+  color: hsl(271, 36%, 24%);
+}
+main section:nth-child(2) p {
+  width: 58%;
+  font-size: 1.1rem;
+  margin-inline: 4em 4em;
+  line-height: 35px;
+  color: hsl(270, 7%, 64%);
+}
+main section:nth-child(2)::before {
+  content: "";
+  width: 60%;
+  height: 85%;
+  background-color: hsla(276, 78%, 83%, 0.106);
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+  border-top-left-radius: 15em;
+  border-top-right-radius: 15em;
+  z-index: -1;
+}
+
+@media (width < 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main section:nth-child(1) {
+    order: 1;
+    width: 100%;
+    height: 65%;
+    overflow-x: visible;
+  }
+  main section:nth-child(1) .phone-body {
+    scale: 0.7;
+    top: 0;
+    left: 50%;
+    transform: translate(-70%, -15%);
+  }
+  main section:nth-child(1)::before {
+    width: 60%;
+    height: 70%;
+  }
+  main section:nth-child(2) {
+    order: 2;
+    width: 100%;
+    height: 43%;
+    overflow-x: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section:nth-child(2) h1 {
+    width: 100%;
+    text-align: center;
+    margin-inline: 0 0;
+  }
+  main section:nth-child(2) p {
+    width: 90%;
+    line-height: 25px;
+    margin-inline: 0 0;
+    text-align: center;
+  }
+  main section:nth-child(2)::before {
+    display: none;
+  }
+}
+@media (height < 500px) and (width < 850px) {
+  body {
+    min-height: 100vh;
+  }
+  main {
+    display: flex;
+    gap: 30em;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+  }
+  mainsection:nth-child(1) {
+    min-height: 100vh;
+  }
+  main section:nth-child(2) {
+    max-width: 400px;
+    min-height: 100vh;
+  }
+}/*# sourceMappingURL=styles.css.map */

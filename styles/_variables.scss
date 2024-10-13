@@ -1,0 +1,42 @@
+// Sizes
+$minMaxWidth: 850px;
+$minWidth: 375px;
+$maxWidth: 1440px;
+
+// Colors
+
+// Primary
+
+// (sub-heading at the top of the app UI)
+$clr-primary-100: hsl(276, 100%, 81%);
+// chat on the left)
+$clr-primary-200: hsl(276, 55%, 52%);
+// (chat on the right)
+$clr-primary-300: hsl(271, 15%, 43%);
+// placeholder text
+$clr-primary-400: hsl(206, 6%, 79%);
+// main heading
+$clr-primary-500: hsl(271, 36%, 24%);
+$clr-primary-600: hsl(270, 7%, 64%);
+$clr-primary-700: hsla(275, 71%, 89%, 0.479);
+
+// Gradients
+$clr-grd-100: hsl(293, 100%, 63%);
+$clr-grd-200: hsl(264, 100%, 61%);
+
+// Secondary
+$clr-secondary-100: hsl(0, 0%, 100%);
+$clr-secondary-200: hsl(270, 20%, 96%);
+$clr-secondary-300: hsl(271, 36%, 24%);
+$clr-secondary-400: hsl(289, 100%, 72%);
+$clr-secondary-500: hsla(276, 78%, 83%, 0.106);
+// Font Size
+$fs-100: 1rem;
+
+// Font Family
+$ff-100: "Rubik", sans-serif;
+
+// Font Weights
+$fw-100: 300;
+$fw-200: 500;
+$fw-300: 700;
